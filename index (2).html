@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusKart</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#080511] text-[#c9c3e0] font-['Inter'] font-light">
+
+ 
+   <nav class="flex justify-between items-center bg-[#030208] px-6 md:px-16 py-5 border-[#a78bfa]/30">
+    <h1 class="text-2xl font-['Cinzel'] font-semibold tracking-[0.2em] uppercase text-[#f3f0ff]">Campus<span class="text-[#a78bfa]">Kart</span></h1>
+    <div class="flex gap-8 text-xs uppercase tracking-[0.25em]">
+      <a href="#products" class="hover:text-[#a78bfa]">Shop</a>
+      <a href="#cart" class="hover:text-[#a78bfa]">Cart</a>
+    </div>
+  </nav>
+
+
+  <section class="flex flex-col md:flex-row items-center md:justify-between gap-10 px-6 md:px-16 py-20 text-center md:text-left text-[#f3f0ff] border-y-[24px] border-black bg-[#3b1d8f] bg-blend-multiply bg-[url('banner.jpg')] bg-cover bg-center">
+    <div>
+      <p class="text-xs uppercase tracking-[0.5em] text-[#a78bfa]">After Dark Collection</p>
+      <h2 class="mt-4 text-5xl md:text-7xl font-['Cinzel'] font-bold leading-none">College Sale</h2>
+      <p class="mt-5 tracking-wide text-[#c9c3e0]">Up to 50% off on bags, books and more</p>
+      <a href="#products" class="inline-block mt-8 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs font-medium uppercase tracking-[0.3em] px-8 py-3">Shop Now</a>
+    </div>
+    <img src="banner.jpg" alt="Sale" class="w-48 h-48 md:w-64 md:h-64 object-cover border border-[#a78bfa]/50 shadow-2xl shadow-black">
+  </section>
+
+  <!-- GIVEN: Why Shop With Us (already styled, nothing to do) -->
+  <section class="grid grid-cols-3 gap-4 text-center px-6 md:px-16 py-10">
+    <div class="bg-[#110c22] border border-[#2b1f55] p-4">
+      <p class="text-2xl font-['Cinzel'] font-bold text-[#a78bfa]">Free</p>
+      <p class="text-xs uppercase tracking-[0.2em] text-[#8e86b0]">Delivery</p>
+    </div>
+    <div class="bg-[#110c22] border border-[#2b1f55] p-4">
+      <p class="text-2xl font-['Cinzel'] font-bold text-[#a78bfa]">7-Day</p>
+      <p class="text-xs uppercase tracking-[0.2em] text-[#8e86b0]">Returns</p>
+    </div>
+    <div class="bg-[#110c22] border border-[#2b1f55] p-4">
+      <p class="text-2xl font-['Cinzel'] font-bold text-[#a78bfa]">COD</p>
+      <p class="text-xs uppercase tracking-[0.2em] text-[#8e86b0]">Available</p>
+    </div>
+  </section>
+
+  <!-- TODO Build It 4: Responsive Product Grid
+       Add classes to this <section> -->
+  <section id="products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:px-16 pb-16">
+
+    <!-- TODO Build It 1 + 2: Product Card
+         Style this FIRST card: <div>, <img>, <h3>, <p>, <span>, <button>.
+         Then copy the same classes to the other 3 cards. -->
+    <div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="backpack.jpg" alt="Backpack" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">Backpack</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 799 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">1299</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+<div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="notebooks.jpg" alt="Notebooks" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">Notebook Set</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 199 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">299</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+<div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="bottle.jpg" alt="Water Bottle" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">Water Bottle</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 349 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">499</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+<div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="earphones.jpg" alt="Earphones" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">Earphones</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 599 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">999</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+<div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="calculator.jpg" alt="Calculator" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">Scientific Calculator</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 549 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">799</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+<div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="lamp.jpg" alt="Desk Lamp" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">LED Desk Lamp</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 449 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">699</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+<div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="hoodie.jpg" alt="Hoodie" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">College Hoodie</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 899 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">1499</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+<div class="bg-[#110c22] border border-[#2b1f55] hover:border-[#a78bfa] p-4">
+  <img src="pens.jpg" alt="Pen Set" class="w-full">
+  <h3 class="mt-4 text-xl font-['Cinzel'] font-semibold text-[#f3f0ff]">Gel Pen Set</h3>
+  <p class="font-medium text-[#a78bfa]">Rs. 99 <span class="ml-1 text-sm font-light line-through text-[#5f5880]">149</span></p>
+  <button class="w-full mt-4 bg-[#a78bfa] hover:bg-[#c4b5fd] text-[#080511] text-xs uppercase tracking-[0.3em] py-3">Add to Cart</button>
+</div>
+
+</section>
+  <!-- GIVEN: Footer (already styled, nothing to do) -->
+  <footer class="bg-[#030208] text-[#8e86b0] py-8 text-center border-t border-[#a78bfa]/30">
+  <p class="text-xs uppercase tracking-[0.3em]">&copy; 2026 CampusKart</p>
+  <div class="flex justify-center gap-8 mt-3 text-xs uppercase tracking-[0.25em]">
+    <a href="#" class="hover:text-[#a78bfa]">About</a>
+    <a href="#" class="hover:text-[#a78bfa]">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
